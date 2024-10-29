@@ -28,22 +28,22 @@ const Contact = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault(); 
     setLoading(true);
-
     emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "JavaScript Mastery",
-          from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
-          message: form.message,
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
+    .send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID, 
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      {
+        from_name: form.name,
+        to_name: "Mustafa Muhamed",
+        from_email: form.email,
+        to_email: "mostafakhamiss456@gmai.com",
+        message: form.message,
+      },
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    )  
+    
       .then(
         () => {
           setLoading(false);
@@ -65,6 +65,7 @@ const Contact = () => {
   };
 
   return (
+    
     <div
       className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
     >
@@ -131,6 +132,8 @@ const Contact = () => {
       </motion.div>
     </div>
   );
+
+
 };
 
 export default SectionWrapper(Contact, "contact");

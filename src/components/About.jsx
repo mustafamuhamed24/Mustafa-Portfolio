@@ -47,11 +47,14 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        Im Front-End Developer with a year of experience specializing in IPTV
+        application development and web solutions. Proficient in creating
+        seamless streaming platforms for Samsung and LG TVs using Tizen
+        Studio and webOS extensions, as well as building responsive websites
+        with React.js & Next.js. Demonstrated ability to optimize performance, enhance
+        user experiences, and deliver projects on time. Passionate about
+        leveraging innovative technologies to solve complex challenges and
+        exceed client expectations.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
